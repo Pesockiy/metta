@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>METTA</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container header__container">
             <button class="hamburger-button"></button>
-            <img src="img/Vector.png" alt="logo" class="logo">
+            <a href="#" class="logo"><img src="img/Vector.png" alt="logo" class="logo__img"></a>
             <span class="counter">0</span>
         </div>
     </header>
@@ -22,5 +25,45 @@
             <a href="#" class="button home__button">DRINK META</a>
         </div>
     </section>
+
+    <section class="section brands-cite">
+        <div class="container">
+            <div class="swiper-container b-brands">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="brands-cite__text">“I swear I felt more energized after just half a can. I’ll keep
+                            some for when I’m feeling sluggish.”</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="brands-cite__text">“I swear I felt more energized after just half a can. I’ll keep
+                            some for when I’m feeling sluggish.”</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="brands-cite__text">“I swear I felt more energized after just half a can. I’ll keep
+                            some for when I’m feeling sluggish.”</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="brands-cite__text">“I swear I felt more energized after just half a can. I’ll keep
+                            some for when I’m feeling sluggish.”</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="brands-cite__text">“I swear I felt more energized after just half a can. I’ll keep
+                            some for when I’m feeling sluggish.”</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination">
+                    <img src="./img/b1.png" class="swiper-pagination-bullet swiper-pagination-bullet-active" alt="">
+                    <img src="./img/b2.png" class="swiper-pagination-bullet" alt="">
+                    <img src="./img/b3.png" class="swiper-pagination-bullet" alt="">
+                    <img src="./img/b4.png" class="swiper-pagination-bullet" alt="">
+                    <img src="./img/b5.png" class="swiper-pagination-bullet" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>

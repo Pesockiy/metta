@@ -162,9 +162,51 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -12%;
-  height: 24%;
-  background: url(../img/vawe.svg);
+  bottom: -20%;
+  height: 40%;
+  background: url(../img/vawe.svg) no-repeat;
+  background-size: cover;
+}
+
+.brands-cite {
+  padding: 105px 20px 95px;
+  background-color: #eafcfc;
+}
+.brands-cite__text {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.4;
+  color: #14C5C4;
+}
+
+.b-brands {
+  max-width: 1100px;
+}
+.b-brands .slider__item {
+  padding: 10px;
+  text-align: center;
+}
+.b-brands .slider__wrapper {
+  max-width: 600px;
+  margin: auto;
+  background-color: transparent;
+}
+.b-brands .swiper-pagination-bullet {
+  width: auto;
+  background: transparent;
+}
+.b-brands .swiper-pagination {
+  position: static;
+  margin-top: 80px;
+}
+.b-brands .swiper-pagination-bullet {
+  width: 130px;
+  height: 40px;
+  border-radius: 0;
+  opacity: 1;
+}
+.b-brands .swiper-pagination-bullet-active {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
