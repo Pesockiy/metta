@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import 'reset';
+@import 'variables';
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: $main-color;
+    font-family: $fontNormal;
+    height: 20px;
+}
+
+.hamburger-button {
+    position: relative;
+    height: 30px;
+    min-width: 48px;
+    background-color: transparent;
+    @media screen and (max-width: 600px) {
+        order: 1;
+    }
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        height: 8px;
+        left: 0;
+        right: 0;
+        background-color: $main-color;
+    }
+    &::before {
+        bottom: 0;
+    }
+    &::after {
+        top: 0;
+    }
+}
+
+.counter {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+}
+
+.header {
+   height: 154px;
+   padding: 55px; 
+   background-color: #fff;
+   &__container {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+        @media screen and (max-width: 600px) {
+            padding: 20px;
+        }
+   }
+}

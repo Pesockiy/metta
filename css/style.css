@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #193EE9;
+  font-family: "Roboto", sans-serif;
+  height: 20px;
+}
+
+.hamburger-button {
+  position: relative;
+  height: 30px;
+  min-width: 48px;
+  background-color: transparent;
+}
+@media screen and (max-width: 600px) {
+  .hamburger-button {
+    order: 1;
+  }
+}
+.hamburger-button::after, .hamburger-button::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  left: 0;
+  right: 0;
+  background-color: #193EE9;
+}
+.hamburger-button::before {
+  bottom: 0;
+}
+.hamburger-button::after {
+  top: 0;
+}
+
+.counter {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #193EE9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .counter {
+    display: none;
+  }
+}
+
+.header {
+  height: 154px;
+  padding: 55px;
+  background-color: #fff;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .header__container {
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
