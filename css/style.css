@@ -6,9 +6,11 @@
   padding: 0;
   box-sizing: border-box;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+}
+
+button {
+  cursor: pointer;
 }
 
 article, aside, details, figcaption, figure,
@@ -39,16 +41,14 @@ table {
   border-spacing: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-}
-
-body {
-  background-color: #193EE9;
-  font-family: "Roboto", sans-serif;
-  height: 20px;
 }
 
 .hamburger-button {
@@ -93,7 +93,30 @@ body {
   }
 }
 
+.ttl {
+  font-size: 40px;
+}
+
+.button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #193EE9;
+  color: #fff;
+  transition: background-color 0.4s;
+}
+.button:hover {
+  background-color: #e919a6;
+}
+
 .header {
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   height: 154px;
   padding: 55px;
   background-color: #fff;
@@ -107,6 +130,41 @@ body {
   .header__container {
     padding: 20px;
   }
+}
+
+.home {
+  position: relative;
+  padding: 160px 20px 120px;
+  background: url(../img/mainsection.jpg) no-repeat;
+  background-size: cover;
+}
+.home__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home__img {
+  display: block;
+  margin-top: 10vh;
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+}
+.home__ttl {
+  margin: 30px;
+}
+.home__button {
+  margin: 30px auto;
+}
+.home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12%;
+  height: 24%;
+  background: url(../img/vawe.svg);
 }
 
 /*# sourceMappingURL=style.css.map */

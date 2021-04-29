@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import 'reset';
-@import 'variables';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import "reset";
+@import "variables";
+
+body {
+    font-family: $fontNormal;
+}
 
 .container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-}
-
-body {
-    background-color: $main-color;
-    font-family: $fontNormal;
-    height: 20px;
 }
 
 .hamburger-button {
@@ -24,7 +22,7 @@ body {
     }
     &::after,
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         height: 8px;
         left: 0;
@@ -53,16 +51,76 @@ body {
     }
 }
 
+.ttl {
+    font-size: 40px;
+}
+
+.button {
+    display: inline-block;
+    min-width: 200px;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $main-color;
+    color: #fff;
+    transition: background-color .4s;
+    &:hover {
+        background-color: adjust-hue($main-color, 90);
+    }
+}
+
 .header {
-   height: 154px;
-   padding: 55px; 
-   background-color: #fff;
-   &__container {
-       display: flex;
-       align-items: center;
-       justify-content: space-between;
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 154px;
+    padding: 55px;
+    background-color: #fff;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         @media screen and (max-width: 600px) {
             padding: 20px;
         }
-   }
+    }
+}
+
+
+
+.home {
+    position: relative;
+    padding: 160px 20px 120px;
+    background: url(../img/mainsection.jpg) no-repeat;
+    background-size: cover;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__img {
+        display: block;
+        margin-top: 10vh;
+        width: 100%;
+        max-width: 1300px;
+        height: auto;
+    }
+    &__ttl {
+        margin: 30px;
+    }
+    &__button {
+        margin: 30px auto;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -12%;
+        height: 24%;
+        background: url(../img/vawe.svg);
+    }
 }
